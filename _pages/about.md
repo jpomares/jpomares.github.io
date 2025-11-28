@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Jorge Pomares
+##Jorge Pomares
 ======
 
 I am a Full Professor at the University of Alicante, where I lead Space Robotics Laboratory of the HURO research group. I received my PhD in Computer Science from the University of Alicante, and since 2003 I have been part of the Department of Physics, Systems Engineering, and Signal Theory. My research focuses on space robotics, robotic control, and visual servoing.
