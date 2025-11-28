@@ -6,38 +6,19 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap"> A complete list of my publications is available in <a href="{{site.author.googlescholar}}">Google Scholar</a> and <a href="{{site.author.orcid}}">ORCIDr</a> 
+  <div class="wordwrap"> A complete list of my publications is available in <a href="{{site.author.googlescholar}}">Google Scholar</a> and <a href="{{site.author.orcid}}">ORCID.</a> 
   {% endif %}
 
 {% include base_path %}
 
-### Log Files
+
 
 Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
 
 * Internet Protocol addresses (IP)
 * Types of browser
     
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+
 
 
 
